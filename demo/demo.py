@@ -18,9 +18,9 @@ from evaluation_graph import *
 # DATA
 # ------------------------------
 
-DATA_DIR = "data"
-SAMPLE_FILE_NAME = "test_df_latest.json"
-SAMPLES_PATH = os.path.join(DATA_DIR, SAMPLE_FILE_NAME)
+# DATA_DIR = "data"
+# SAMPLE_FILE_NAME = "test_df_latest.json"
+SAMPLES_PATH = "data/test_df_latest.json" #os.path.join(DATA_DIR, SAMPLE_FILE_NAME)
 
 df_samples = pd.read_json(SAMPLES_PATH, orient="records", lines=True)
 
