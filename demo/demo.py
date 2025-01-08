@@ -18,7 +18,7 @@ from evaluation_graph import *
 # DATA
 # ------------------------------
 
-DATA_DIR = "../data"
+DATA_DIR = "data"
 SAMPLE_FILE_NAME = "test_df_latest.json"
 SAMPLES_PATH = os.path.join(DATA_DIR, SAMPLE_FILE_NAME)
 
