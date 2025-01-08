@@ -33,24 +33,24 @@ else:
 # File path
 SAMPLES_PATH = "data/test_df_latest.json"
 
-# Try reading the file
-try:
-    if not os.path.exists(SAMPLES_PATH):
-        st.error(f"File not found: {SAMPLES_PATH}. Please ensure it exists in the 'data' folder.")
-    else:
-        st.success(f"File found: {SAMPLES_PATH}. Attempting to read...")
-        df_samples = pd.read_json(SAMPLES_PATH, orient="records", lines=True)
-        st.write("Data preview:")
-        st.dataframe(df_samples)
-except Exception as e:
-    st.error(f"An error occurred: {e}")
+# # Try reading the file
+# try:
+#     if not os.path.exists(SAMPLES_PATH):
+#         st.error(f"File not found: {SAMPLES_PATH}. Please ensure it exists in the 'data' folder.")
+#     else:
+#         st.success(f"File found: {SAMPLES_PATH}. Attempting to read...")
+#         df_samples = pd.read_json(SAMPLES_PATH, orient="records", lines=True)
+#         st.write("Data preview:")
+#         st.dataframe(df_samples)
+# except Exception as e:
+#     st.error(f"An error occurred: {e}")
 
 
 # DATA_DIR = "data"
 # SAMPLE_FILE_NAME = "test_df_latest.json"
 # SAMPLES_PATH = "data/test_df_latest.json" #os.path.join(DATA_DIR, SAMPLE_FILE_NAME)
 
-# df_samples = pd.read_json(SAMPLES_PATH, orient="records", lines=True)
+df_samples = pd.read_json(SAMPLES_PATH, orient="records", lines=True)
 
 
 # ------------------------------
