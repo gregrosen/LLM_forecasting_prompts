@@ -13,6 +13,8 @@ import streamlit as st
 from run_pipeline import run_pipeline, format_choices
 from evaluation_graph import *
 
+# Set page configuration (must be the first Streamlit command)
+st.set_page_config(page_title="Automating Prompt Engineering for Forecasting Tasks")
 
 # ------------------------------
 # DATA
@@ -147,8 +149,6 @@ def get_choices(df, question):
 # ------------------------------
 # APPLICATION
 # ------------------------------
-
-st.set_page_config(page_title="Automating Prompt Engineering for Forecasting Tasks")
 
 ### SIDEBAR
 
