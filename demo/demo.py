@@ -20,17 +20,17 @@ st.set_page_config(page_title="Automating Prompt Engineering for Forecasting Tas
 # DATA
 # ------------------------------
 
-# Debugging Information
-st.write("Current working directory:", os.getcwd())
-st.write("Files in current directory:", os.listdir())
+# # Debugging Information
+# st.write("Current working directory:", os.getcwd())
+# st.write("Files in current directory:", os.listdir())
 
-# Check if 'data' folder exists
-if os.path.exists("data"):
-    st.write("Files in 'data' directory:", os.listdir("data"))
-else:
-    st.write("Data directory not found.")
+# # Check if 'data' folder exists
+# if os.path.exists("data"):
+#     st.write("Files in 'data' directory:", os.listdir("data"))
+# else:
+#     st.write("Data directory not found.")
 
-# File path
+# # File path
 SAMPLES_PATH = "data/test_df_latest.json"
 
 # # Try reading the file
